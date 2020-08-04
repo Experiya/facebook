@@ -1,0 +1,228 @@
+<!-- Jc 87-->
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Timeline 2</title>
+    <script>console.log= function(){};</script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="icon/css/material-design-iconic-font.min.css">
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <script src='js.js'></script>
+
+    <script src='jquery.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="cssa.css">
+</head>
+<body class="">
+  <div class="comment">
+    <script type="text/javascript">
+      var first_person_comment='Clieff_ev';
+      var and_other='3 others';
+    </script>
+    <b><span  id="comment" onclick="upper_comment1();"><script>document.write(first_person_comment)</script></span></b> and <b><span id="comment2" onclick="upper_comment2();"><script>document.write(and_other)</script></span></b> commented.
+    <i class="zmdi zmdi-more right_more" ></i>
+  </div>
+  <hr style="background-color: EDEDED">
+<div class="chat">
+     <div class="chat-page">
+            <div id="call" class="user-bar">
+              <div class="avatar">
+                <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
+                    <p style="">
+                      <label for="file" style="cursor: pointer;">
+                      <img id="pics" src="images/dp.png" alt="Avatar" onclick="set_profile();">
+                      </label>
+                    </p>
+              </div>
+              <script>
+              var loadFile = function(event) {
+                var image = document.getElementById('pics');
+                image.src = URL.createObjectURL(event.target.files[0]);
+              };
+              </script>
+
+              <div class="handle_name" id='handle_name'>
+                <script type="text/javascript">var n="Unknown"</script>
+                <span id="person" onclick="set_name();">
+                  <script type="text/javascript">document.write(n);</script>
+                </span>
+                <span class="Status" ><span id="Status" onclick="Status();" > Yeasterday at 4:05 PM .</span><i class="zmdi zmdi-accounts"></i></span>
+              </div>
+              <!--<div class="actions more">
+                <i class="zmdi zmdi-more " onclick="alert('clicked');"></i>
+              </div>-->
+            </div>
+
+            <br>
+            <script>
+              var hello_time='Hello Js I am here';
+            </script>
+            <div class="comment2" id="Primay_status" style="margin-left: 10px;" onclick="set_status();"><script>document.write(hello_time)</script></div>
+            <div class="row justify-content-center align-items-center">
+                                  <div class="" style="padding-left: 35px; padding-right: 35px; ">
+
+                                      <div class="image-upload" accept="image/*">
+                                          <label for="getimage">
+                                              
+                                              <img id="p7" src="images/dp.png" class="mx-auto my-auto img-thumbnail">
+                                              <!--<i class="zmdi zmdi-more "></i>-->
+                                              
+                                          </label>
+
+                                          <input id="getimage" type="file"/>
+                                      </div>
+                                      <!--<p >
+                                      <img id="p7" src="images/samir.jpg" class="mx-auto my-auto img-thumbnail">
+                                    </p>-->
+                                      <script type="text/javascript">
+                                        var imageLoader = document.getElementById('getimage');
+                                        imageLoader.addEventListener('change', handleImage, false);
+
+
+                                        function handleImage(e){
+                                            var reader = new FileReader();
+                                            reader.onload = function(event){
+                                                var img = new Image();
+                                                img.onload = function(){
+                                                    //document.getElementById('p7').innerHTML=background-image:url('images/shree.jpg');
+                                                    //$(".up_back").css("background-image", "url(" + img.src+ ")");
+
+                                                    //document.conversation-page.appendChild(img);
+                                                    //var str=document.getElementById('image_to_upload').innerHTML;
+                                                    document.getElementById("p7").src =img.src; 
+
+                                                }
+                                                img.src = event.target.result;
+                                            }
+                                            reader.readAsDataURL(e.target.files[0]);     
+                                        }
+                                      </script>
+                                          
+                                      <script type="text/javascript">
+                                        var get_comment='Clieff_ev and 44 others';
+                                        var comment_var='1.3k comments';
+                                        var share_var='70 shares';
+                                      </script>
+
+                                      <div class="comment3">
+                                         <img class="second" src="images/heart.png" style="height: 15px; width: 15px;">
+                                        <img class="first" src="images/f_like.jpeg" style="height: 22px; width: 19px; ">
+
+                                        <span id="other_comments" onclick="set_other();" style="margin-left: 17px;"><script> 
+                                      document.write(get_comment); </script></span>
+                                      <div style="float: right;">
+                                       <span id="comment_var" onclick="set_comment_var();"><script>document.write(comment_var);</script></span>  <span id="share" onclick="set_share();"><script>document.write(share_var);</script></span> 
+
+                                      </div>
+                                      </div>
+                                      
+                                      
+                                      <hr style="background-color:EDEDED;">
+                                        <div class="" style="float: left; text-align: left; margin-left: 15px;">
+                                        <img src="images/like.png" style="height: 18px; width: 18px;"><span class="like">Like</span>
+                                        </div>
+                                        
+                                        <div class="" style="float: right; text-align: right; margin-right: 15px;">
+                                          <img src="images/share.png" style="height: 18px; width: 18px;"><span class="like">Share</span>
+                                        </div>
+
+                                        <div class="" style="text-align: center; ">
+                                          <img src="images/comment.jpg" style="height: 15px; width: 15px;">
+                                          <span class="like">Comment</span>
+                                        </div>
+                                        <hr>
+                                        
+                                      <!--<div style=" font-size: 13px;
+                                              font-weight: 400;
+                                              letter-spacing: -5;">
+
+                                        
+                                          <img src="images/samir.jpg" style="width: 40px;height: 40px;">
+                                          <img src="images/samiran.jpg" style="width: 40px;height: 40px;">
+                                        </div>-->
+                                      
+
+                                      </div>
+                                  </div>
+                                </div>
+
+
+              </div>
+             </div>
+</body>
+</html>
+<script type="text/javascript">
+  function set_name(){
+    var n = prompt("Set Name :", "Unknown");
+    if(n!=null){
+    document.getElementById("person").innerHTML = n;
+      }
+    }
+    function Status(){
+      var n = prompt("Set Status :", "Yeasterday at 4:05 PM .");
+      if(n!=null){
+      document.getElementById("Status").innerHTML = n;
+        }
+      }
+      function upper_comment1(){
+        var temp_first_person_comment=first_person_comment;
+        first_person_comment = prompt("Set Status :", first_person_comment);
+        if(first_person_comment!=null){
+        document.getElementById("comment").innerHTML = first_person_comment;
+        }else{
+          first_person_comment=temp_first_person_comment;
+        }
+      }
+      function upper_comment2(){
+        var temp_and_other=and_other;
+        and_other = prompt("Set Status :", and_other);
+        if(and_other!=null){
+        document.getElementById("comment2").innerHTML = and_other;
+        }else{
+          and_other=temp_and_other;
+        }
+      }
+      function set_status(){
+        var temp_hello_time=hello_time;
+        hello_time = prompt("Set Status :", hello_time);
+        if(hello_time!=null){
+        document.getElementById("Primay_status").innerHTML = hello_time;
+        }else{
+          hello_time=temp_hello_time;
+        }
+      }
+      function set_other(){
+        var temp_get_comment=get_comment;
+        get_comment = prompt("Set Get Comments :", get_comment);
+        if(get_comment!=null){
+        document.getElementById("other_comments").innerHTML = get_comment;
+        }else{
+          get_comment=temp_get_comment;
+        }
+      }
+      function set_comment_var(){
+        var temp_set_comment_var=comment_var;
+        comment_var = prompt("Set Get Comments :", comment_var);
+        if(comment_var!=null){
+        document.getElementById("comment_var").innerHTML = comment_var;
+        }else{
+          comment_var=temp_set_comment_var;
+        }
+      }
+      function set_share(){
+        var temp_share_var=share_var;
+        share_var = prompt("Set Share :", share_var);
+        if(share_var!=null){
+        document.getElementById("comment_var").innerHTML = share_var;
+        }else{
+          share_var=temp_share_var;
+        }
+      }
+      
+</script>
